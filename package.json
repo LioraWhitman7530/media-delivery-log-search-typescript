@@ -1,0 +1,13 @@
+{
+  "name": "media-log-search-typescript",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node --experimental-strip-types src/media_delivery.ts",
+    "test": "node --experimental-strip-types --test src/media_delivery.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "zod": "^3.25.0" },
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.7.0" }
+}

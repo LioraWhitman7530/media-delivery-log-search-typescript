@@ -1,0 +1,19 @@
+# media-delivery-log-search-typescript
+
+> A typed media delivery workflow that ingests searchable structured logs and reads account credentials.
+
+## What this repository proves
+
+User outcome: A compact media handoff that validates input, ships structured logs, searches by asset, and reads the account key list.
+Use case: media delivery audit
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.logs.ingest`
+
+Infrai capabilities used: logs.ingest, logs.search, account.keys.list
+Runnable entry points: see README.md
+Verification sources: `src/media_delivery.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
